@@ -43,7 +43,9 @@
       ga-click (not button with pointer cursor)
     </div>
 
-    <div onclick="dataLayer.push({'event': 'my-ga-event'})">
+    <div
+      onclick="dataLayer.push({'event': 'my-ga-event'}); console.log('clicked')"
+    >
       Trigger my-ga-event
     </div>
   </body>
